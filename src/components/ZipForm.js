@@ -34,4 +34,14 @@ class ZipForm extends Component {
   }
 }
 
+ZipForm.propTypes = {
+  zips: React.PropTypes.arrayOf(React.PropTypes.number).isRequired,
+  onSubmit: React.PropTypes.func
+}
+ZipForm.defaultProps = {
+  onSubmit: () => {}
+}
+
+
+
 export default ZipForm
